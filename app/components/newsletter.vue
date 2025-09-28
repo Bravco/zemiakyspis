@@ -40,7 +40,6 @@
     });
 
     const loading = ref<boolean>(false);
-    const success = ref<boolean>(false);
 
     async function onSubmit(event: FormSubmitEvent<Schema>) {
         loading.value = true;
