@@ -8,9 +8,6 @@ export default defineNuxtConfig({
       WEB3FORMS_ACCESS_KEY: process.env.WEB3FORMS_ACCESS_KEY
     }
   },
-  ui: {
-    colorMode: false
-  },
   app: {
     head: {
       htmlAttrs: {

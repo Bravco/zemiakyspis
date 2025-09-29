@@ -40,6 +40,7 @@
           to="mailto:farmahamorsro@gmail.com"
           aria-label="email"
         />
+        <UColorModeButton/>
       </template>
     </UFooter>
   </div>

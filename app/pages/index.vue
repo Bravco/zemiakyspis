@@ -21,10 +21,10 @@
             const spline = new Application(canvas);
             spline.load("https://prod.spline.design/arZD9oYwVIhDCJdl/scene.splinecode").then(() => {
                 const object = spline.findObjectByName("low-poly_potato");
-                const xTranslate = "300";
+                const offset = 50;
                 
                 if (object) {
-                    gsap.set(canvas, { x: xTranslate });
+                    gsap.set(object.position, { x: offset, z: -offset });
 
                     gsap.timeline({
                         scrollTrigger: {
@@ -36,8 +36,9 @@
                             pinSpacing: false
                         },
                     })
-                    .to(object.rotation, {  x: 1, y: -1 }, 0)
-                    .to(canvas, { x: -xTranslate, y: "75vh" }, 0);
+                    .to(object.position, { x: -offset, z: offset })
+                    .to(object.rotation, {  x:1, z: 2 }, 0)
+                    .to(canvas, { y: "80vh" }, 0);
                 }
             });
         }

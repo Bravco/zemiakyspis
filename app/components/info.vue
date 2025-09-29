@@ -18,6 +18,11 @@
             icon: "i-lucide-star"
         },
         {
+            title: "Doprava",
+            description: "Dovoz po dohode zabezpečím Spišská Nová Ves a okolie.",
+            icon: "i-lucide-truck"
+        },
+        {
             title: "+421 948 121 289",
             icon: "i-lucide-phone",
             to: "tel:+421948121289"
