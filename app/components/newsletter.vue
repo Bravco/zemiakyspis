@@ -8,7 +8,7 @@
         <template #links>
             <UForm :schema="schema" :state="state" @submit="onSubmit" class="flex flex-wrap gap-4">
                 <UFormField name="email" required>
-                    <UInput v-model="state.email" placeholder="Email"/>
+                    <UInput v-model="state.email" type="email" placeholder="Email"/>
                 </UFormField>
                 <UButton
                     type="submit"
