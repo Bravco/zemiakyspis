@@ -40,7 +40,9 @@
                     <UButton
                         type="submit"
                         class="cursor-pointer"
-                        label="Odoslať"
+                        :label="loading ? '' : 'Odoslať'"
+                        :icon="loading ? 'eos-icons:loading' : ''"
+                        :disabled="loading"
                     />
                 </div>
             </UForm>

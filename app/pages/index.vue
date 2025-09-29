@@ -38,7 +38,7 @@
                     })
                     .to(object.position, { x: -offset, z: offset })
                     .to(object.rotation, {  x:1, z: 2 }, 0)
-                    .to(canvas.value, { y: "80vh" }, 0);
+                    .to(canvas.value, { y: "75vh" }, 0);
 
                     gsap.timeline({
                         scrollTrigger: {
@@ -51,7 +51,7 @@
                     })
                     .to(object.position, { x: offset, z: -offset })
                     .to(object.rotation, {  x: -1  }, 0)
-                    .to(canvas.value, { y: "160vh" }, 0);
+                    .to(canvas.value, { y: "150vh" }, 0);
                 }
             });
         }
