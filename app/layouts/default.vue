@@ -10,6 +10,10 @@
      <template #right>
       <UButton :to="{ path: '/', hash: '#objednavka' }" size="lg" icon="i-lucide-truck">Objednaj</UButton>
      </template>
+
+     <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" variant="link" color="neutral" class="-mx-2.5"/>
+     </template>
     </UHeader>
 
     <UMain>
@@ -52,15 +56,18 @@
   const items = ref<NavigationMenuItem[]>([
     {
       label: "Informácie",
-      to: { path: "/", hash: "#info" }
+      to: { path: "/", hash: "#info" },
+      active: false
     },
     {
       label: "Kontakt",
-      to: { path: "/", hash: "#info" }
+      to: { path: "/", hash: "#info" },
+      active: false
     },
     {
       label: "Novinky",
-      to: { path: "/", hash: "#novinky" }
+      to: { path: "/", hash: "#novinky" },
+      active: false
     }
   ]);
 </script>
