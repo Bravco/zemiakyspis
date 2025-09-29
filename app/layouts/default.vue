@@ -37,7 +37,7 @@
           icon="i-lucide-mail"
           color="neutral"
           variant="ghost"
-          to="mailto:briketyspis@gmail.com"
+          to="mailto:farmahamorsro@gmail.com"
           aria-label="email"
         />
       </template>
