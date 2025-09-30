@@ -4,6 +4,7 @@
         <Hero/>
         <Info/>
         <Order/>
+        <Odrody/>
         <Newsletter/>
     </div>
 </template>
@@ -38,12 +39,12 @@
                     })
                     .to(object.position, { x: -offset, z: offset })
                     .to(object.rotation, {  x:1, z: 2 }, 0)
-                    .to(canvas.value, { y: "75vh" }, 0);
+                    .to(canvas.value, { y: "110vh" }, 0);
 
                     gsap.timeline({
                         scrollTrigger: {
                             trigger: "#info",
-                            start: "top top",
+                            start: "bottom bottom",
                             endTrigger: "#objednavka",
                             end: "bottom bottom",
                             scrub: true
@@ -51,7 +52,20 @@
                     })
                     .to(object.position, { x: offset, z: -offset })
                     .to(object.rotation, {  x: -1  }, 0)
-                    .to(canvas.value, { y: "150vh" }, 0);
+                    .to(canvas.value, { y: "220vh" }, 0);
+
+                    gsap.timeline({
+                        scrollTrigger: {
+                            trigger: "#objednavka",
+                            start: "bottom bottom",
+                            endTrigger: "#odrody",
+                            end: "bottom bottom",
+                            scrub: true
+                        },
+                    })
+                    .to(object.position, { x: -offset, z: offset })
+                    .to(object.rotation, {  x:1, z: 2  }, 0)
+                    .to(canvas.value, { y: "330vh" }, 0);
                 }
             });
         }
