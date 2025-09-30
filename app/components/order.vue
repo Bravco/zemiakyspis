@@ -21,7 +21,7 @@
                 <UFormField label="Doprava" name="delivery" class="col-span-1 sm:col-span-2">
                     <USelect v-model="state.delivery" :items="deliveryItems" class="w-full"/>
                 </UFormField>
-                <UForm v-if="state.delivery" :schema="deliverySchema" nested>
+                <UForm v-if="state.delivery" :schema="deliverySchema" nested class="grid grid-cols-1 sm:grid-cols-2 gap-4 col-span-1 sm:col-span-2">
                     <UFormField label="Obec" name="city" required>
                         <UInput v-model="state.city" class="w-full" required/>
                     </UFormField>
