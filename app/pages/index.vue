@@ -34,12 +34,12 @@
                             start: "top top",
                             endTrigger: "#info",
                             end: "bottom bottom",
-                            scrub: true
+                            scrub: true,
+                            pin: canvas.value
                         },
                     })
                     .to(object.position, { x: -offset, z: offset })
-                    .to(object.rotation, {  x:1, z: 2 }, 0)
-                    .to(canvas.value, { y: "110vh" }, 0);
+                    .to(object.rotation, {  x:1, z: 2 }, 0);
 
                     gsap.timeline({
                         scrollTrigger: {
@@ -47,12 +47,12 @@
                             start: "bottom bottom",
                             endTrigger: "#objednavka",
                             end: "bottom bottom",
-                            scrub: true
+                            scrub: true,
+                            pin: canvas.value
                         },
                     })
                     .to(object.position, { x: offset, z: -offset })
-                    .to(object.rotation, {  x: -1  }, 0)
-                    .to(canvas.value, { y: "220vh" }, 0);
+                    .to(object.rotation, {  x: -1  }, 0);
 
                     gsap.timeline({
                         scrollTrigger: {
@@ -60,12 +60,12 @@
                             start: "bottom bottom",
                             endTrigger: "#odrody",
                             end: "bottom bottom",
-                            scrub: true
+                            scrub: true,
+                            pin: canvas.value
                         },
                     })
                     .to(object.position, { x: -offset, z: offset })
-                    .to(object.rotation, {  x:1, z: 2  }, 0)
-                    .to(canvas.value, { y: "330vh" }, 0);
+                    .to(object.rotation, {  x:1, z: 2  }, 0);
                 }
             });
         }
