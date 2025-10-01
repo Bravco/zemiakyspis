@@ -2,6 +2,7 @@
     <UPageSection
         id="objednavka"
         title="Vytvoriť objednávku"
+        icon="i-lucide-truck"
         orientation="horizontal"
     >
         <template #body>
