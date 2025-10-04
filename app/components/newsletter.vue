@@ -12,7 +12,7 @@
                 </UFormField>
                 <UButton
                     type="submit"
-                    class="cursor-pointer"
+                    class="h-fit cursor-pointer"
                     :disabled="loading"
                     :icon="loading ? 'i-eos-icons-loading' : ''"
                     :label="loading ? '' : 'Odoberať'"
