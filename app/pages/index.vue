@@ -32,12 +32,11 @@
 
         spline.load("https://prod.spline.design/arZD9oYwVIhDCJdl/scene.splinecode").then(() => {
             const object = spline.findObjectByName("low-poly_potato");
-            const offset = 60;
+            const offset = 100;
 
             if (!object) return;
             
-            gsap.set(object.scale, { x: 800, y: 800, z: 800 });
-            gsap.set(object.position, { x: offset, z: -offset });
+            gsap.set(object.position, { x: offset });
 
             gsap.timeline({
                 scrollTrigger: {
@@ -48,7 +47,7 @@
                     pin: canvas.value
                 },
             })
-            .to(object.position, { x: -offset, z: offset })
+            .to(object.position, { x: -offset })
             .to(object.rotation, {  x:1, z: 2 }, 0);
 
             gsap.timeline({
@@ -61,7 +60,7 @@
                     pin: canvas.value
                 },
             })
-            .to(object.position, { x: offset, z: -offset })
+            .to(object.position, { x: offset })
             .to(object.rotation, {  x: -1  }, 0);
 
             gsap.timeline({
@@ -74,7 +73,7 @@
                     pin: canvas.value
                 },
             })
-            .to(object.position, { x: -offset, z: offset })
+            .to(object.position, { x: -offset })
             .to(object.rotation, {  x:1, z: 2  }, 0);
         });
     }
