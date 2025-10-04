@@ -3,10 +3,11 @@
         id="info"
         title="Informácie"
         description="Spišská Nová Ves leží v srdci Spiša, v tradičnej zemiakárskej oblasti známej výnimočnou kvalitou úrody. Vďaka nadmorskej výške, čistému horskému vzduchu, dostatku zrážok a chladnejším nociam majú tunajšie zemiaky pevnú štruktúru, plnú chuť a výbornú skladovateľnosť. Pestujú sa tu ekologickejšie, v súlade s prírodou, a preto sú považované za spoľahlivú slovenskú surovinu."
-        icon="i-lucide-info"
+        icon="i-lucide-box"
         orientation="horizontal"
         :features="features"
         :reverse="true"
+        :links="links"
     />
 </template>
 
@@ -32,6 +33,16 @@
             icon: "i-lucide-mail",
             to: "mailto:farmahamorsro@gmail.com",
             description: "V prípade otázok nás neváhajte kontaktovať."
+        }
+    ]);
+
+    const links = ref([
+        {
+            label: "Odrody",
+            to: { path: "/", hash: "#odrody" },
+            trailingIcon: "i-lucide-arrow-right",
+            variant: "subtle",
+            color: "neutral"
         }
     ]);
 </script>

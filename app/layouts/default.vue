@@ -44,7 +44,7 @@
           to="mailto:farmahamorsro@gmail.com"
           aria-label="email"
         />
-        <UColorModeButton/>
+        <UColorModeButton class="cursor-pointer"/>
       </template>
     </UFooter>
   </div>
