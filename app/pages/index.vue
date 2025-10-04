@@ -32,7 +32,7 @@
 
         spline.load("https://prod.spline.design/arZD9oYwVIhDCJdl/scene.splinecode").then(() => {
             const object = spline.findObjectByName("low-poly_potato");
-            const offset = 100;
+            const offset = 60;
 
             if (!object) return;
             
