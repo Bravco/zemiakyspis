@@ -16,7 +16,8 @@ export default defineNuxtConfig({
       title: "Zemiaky Spiš",
       meta: [
         { name: "title", content: "Zemiaky Spiš - domáce zemiaky" },
-        { name: "description", content: "Čerstvé domáce zemiaky priamo od farmára – kvalitné, chutné a vždy poctivo vypestované." }
+        { name: "description", content: "Čerstvé domáce zemiaky priamo od farmára – kvalitné, chutné a vždy poctivo vypestované." },
+        { name: "keywords", content: "zemiaky, zemiaky Spišská Nová Ves, zemiaky spiš, zemiaky na zimné uskladnenie, zemiaky otolia" }
       ]
     }
   }
