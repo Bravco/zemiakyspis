@@ -22,9 +22,9 @@
       </UContainer>
     </UMain>
 
-    <UFooter>
+    <UFooter :ui="{ bottom: 'py-0 lg:py-0' }">
       <template #left>
-        <p class="text-muted text-sm">Copyright © 2025 | Vytvoril <ULink to="https://hamracek.dev" class="text-primary">Andrej Hamráček</ULink></p>
+        <ULink to="https://briketyspis.sk" target="_blank" class="underline">briketyspis.sk</ULink>
       </template>
 
       <UNavigationMenu :items="items" variant="link" color="neutral"/>
@@ -45,6 +45,13 @@
           aria-label="email"
         />
         <UColorModeButton class="cursor-pointer"/>
+      </template>
+
+      <template #bottom>
+        <UContainer>
+          <USeparator/>
+          <p class="py-8 text-center text-muted text-sm">Copyright © 2025 | Vytvoril <ULink to="https://hamracek.dev" class="text-primary">Andrej Hamráček</ULink></p>
+        </UContainer>
       </template>
     </UFooter>
   </div>
