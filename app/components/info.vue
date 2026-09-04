@@ -15,7 +15,7 @@
     const features = ref([
         {
             title: "Cena",
-            description: "0,40 € ... 1 kg",
+            description: "0,50 € ... 1 kg",
             icon: "i-lucide-star"
         },
         {
