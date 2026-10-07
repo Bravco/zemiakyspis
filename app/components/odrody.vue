@@ -8,8 +8,8 @@
     >
         <template #description>
             <div class="flex flex-col gap-4">
-                <h3 class="text-2xl font-bold text-highlighted">Otolia</h3>
-                <p>Otolia je stredne skorá konzumná odroda zemiakov vyšľachtená pre univerzálne použitie. Má žltú šupku aj dužinu, oválne až oválno-dlhé hľuzy s plytkými očkami, čo uľahčuje čistenie. Patrí medzi spoľahlivé a úrodné odrody, s dobrým zdravotným stavom a vysokou odolnosťou voči chorobám a mechanickému poškodeniu.</p>
+                <h3 class="text-2xl font-bold text-highlighted">Concordia</h3>
+                <p>Concordia je stredne skorá konzumná odroda zemiakov vyšľachtená pre univerzálne použitie. Má žltú šupku aj dužinu, oválne až oválno-dlhé hľuzy s plytkými očkami, čo uľahčuje čistenie. Patrí medzi spoľahlivé a úrodné odrody, s dobrým zdravotným stavom a vysokou odolnosťou voči chorobám a mechanickému poškodeniu.</p>
                 <span>Vyniká:</span>
                 <UPageFeature
                     description="výbornou chuťou a pekným vzhľadom hľúz,"
@@ -27,7 +27,7 @@
                     description="odolnosťou voči háďatku zemiakovému a vírusom."
                     icon="i-lucide-check"
                 />
-                <p>Vďaka týmto vlastnostiam je Otolia obľúbená nielen medzi pestovateľmi, ale aj medzi spotrebiteľmi, ktorí hľadajú chutné a poctivé slovenské zemiaky.</p>
+                <p>Vďaka týmto vlastnostiam je Concordia obľúbená nielen medzi pestovateľmi, ale aj medzi spotrebiteľmi, ktorí hľadajú chutné a poctivé slovenské zemiaky.</p>
             </div>
         </template>
     </UPageSection>
